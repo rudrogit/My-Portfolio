@@ -109,6 +109,20 @@ img{
     color: var(--primarycolor);
     margin-bottom: 2.5rem;
 }
+.fixmasseg{
+   position: fixed;
+   right:1rem; bottom:1rem;
+   background-color: transparent;
+   z-index: 999;
+}
+.fixmasseg a i{
+    font-size:2rem;
+    color:var(--tomato);
+}
+.fixmasseg a i:hover{
+    transform: translateY(-10px);
+    color: var(--primarycolor);
+}
 /* start code */
 nav{
     width:99.4vw;

@@ -49,7 +49,7 @@ nav #close-menu-button{
     color: var(--bg);
     place-items: center;
     box-shadow: -4rem 6rem 10rem black;
-    background-color: rgba(21, 228, 159, 0.866);
+    background-color: rgba(21, 228, 159, 0.976);
  }
  .nav-menu li:nth-child(1){
     animation-delay:.1S;
@@ -187,6 +187,9 @@ nav #close-menu-button{
         font-size:.8rem;
      }
 /* nav menu respons*/
+nav{
+  height:3rem;
+}
 nav button{
    display: block;
    font-size:1.5rem;
@@ -198,7 +201,7 @@ nav #close-menu-button{
 }
 .nav-menu{
     position: fixed;
-    top:5rem; right:20%;
+    top:4rem; right:5%;
     gap:0rem;
     flex-direction: column;
     width:15rem; height: fit-content;
@@ -221,11 +224,14 @@ header{
     font-size: 1rem;
 }
 .hed-right .text2{
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-weight: 550;
 }
 .hed-right .text3{
-    font-size: 1.3rem;
+    font-size: 1.1rem;
+}
+.hed-right{
+   padding-bottom:1rem;
 }
 /* header section end */
 /* service section */
@@ -264,7 +270,7 @@ header{
     text-align:center;
     max-width:80%;
     margin-top:2rem;
-    padding-bottom:.5rem;
+    padding-bottom:1rem;
 }
 /* about section end */
 
