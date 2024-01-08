@@ -1,0 +1,348 @@
+@media screen and (max-width:1024px){
+    .container{
+        width: var(--tabwidth);
+    }
+    h1{
+        font-size:2rem;
+    }
+    .but{
+        display: inline-block;
+        color: var(--blackcolor);
+        background-color: var(--primarycolor);
+        padding: 0.3rem 1rem;
+        border:1px solid transparent;
+        border-radius: .4rem;
+        font-weight: 500;
+        cursor: pointer;
+     }
+/* nav menu respons*/
+nav button{
+   display: block;
+   cursor: pointer;
+   font-size:1.5rem;
+   color: var(--secendcolor);
+   background-color: transparent;
+}
+nav #close-menu-button{
+    display: none;
+}
+.nav-menu{
+    position: fixed;
+    top:5rem; right:5%;
+    gap:0rem;
+    flex-direction: column;
+    width:15rem; height: fit-content;
+    display: none; 
+    /* display width js */
+}
+.nav-menu li{
+   width:100%;
+   height:2.5rem;
+   transform-origin:top right ;
+   opacity:0;
+   animation:animationnav .5s linear forwards ;
+}
+.nav-menu li a{
+    width:100%;
+    height:2.5rem;
+    display: grid;
+    color: var(--bg);
+    place-items: center;
+    box-shadow: -4rem 6rem 10rem black;
+    background-color: rgba(21, 228, 159, 0.866);
+ }
+ .nav-menu li:nth-child(1){
+    animation-delay:.1S;
+ }
+ .nav-menu li:nth-child(2){
+    animation-delay:.2S;
+ }
+ .nav-menu li:nth-child(3){
+    animation-delay:.3S;
+ }
+ .nav-menu li:nth-child(4){
+    animation-delay:.4S;
+ }
+ .nav-menu li:nth-child(5){
+    animation-delay:.5S;
+ }
+ .nav-menu li:nth-child(6){
+    animation-delay:.6S;
+ }
+ .nav-menu li:nth-child(7){
+    animation-delay:.7S;
+ }
+ @keyframes animationnav{
+    0%{
+        transform: rotateZ(-90deg);
+    }
+    100%{
+        transform: rotateZ(0);
+        opacity: 1;
+    }
+ }
+/* nav menu respons end*/
+/* header section */
+.hed-right .text1{
+    font-size: 1.5rem;
+}
+.hed-right .text2{
+    font-size: 3rem;
+    font-weight: 550;
+}
+.hed-right .text3{
+    font-size: 2rem;
+}
+/* header section end */
+/* service section */
+.card-div{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.card{
+   width:45%; 
+   margin:1rem auto;
+}
+/* service section end */
+/* portfolio section end */
+.gallary a{
+    width:40%;
+
+}
+/* portfolio section end */
+/* corsess section */
+.corsess-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.corse{
+  width:45%;
+  margin:1rem 0rem;
+  background-color: var(--blackcolor);
+  border:2px solid transparent;
+}
+/* corsess section end */
+/* faq section */
+  .faq{
+      width:90%;
+  }
+/* faq section end */
+/* footer section*/
+.footer1 p{
+    padding:0rem .5rem;
+    font-size: .7rem;
+}
+.footer1 a{
+    padding:0rem .5rem ;
+    font-size: .8rem;
+}
+/* footer section end */
+}
+
+/* about section */  
+.about{
+    padding-top:2rem;
+}
+.about-container{
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2.5rem;
+    background-color: var(--blackcolor);
+    border-radius:2rem;
+}
+
+.img-div2{
+  width:80%;
+  margin: 1rem auto;
+}
+.about-texcontent{
+    text-align:center;
+    max-width:80%;
+    margin-top:2rem;
+    padding-bottom:.5rem;
+}
+.about-texcontent p{
+    margin:1rem 0rem;
+}
+.about-text{
+    margin:1rem 0rem;
+}
+/* about section end */
+
+@media screen and (max-width:450px){
+    .container{
+        width: var(--mobailidth);
+    }
+    h1{
+        font-size:1.5rem;
+    }
+.but{
+        display: inline-block;
+        padding: 0.4rem .8rem;
+        font-size:.8rem;
+     }
+/* nav menu respons*/
+nav button{
+   display: block;
+   font-size:1.5rem;
+   color: var(--secendcolor);
+   background-color: transparent;
+}
+nav #close-menu-button{
+    display: none;
+}
+.nav-menu{
+    position: fixed;
+    top:5rem; right:20%;
+    gap:0rem;
+    flex-direction: column;
+    width:15rem; height: fit-content;
+    display: none; 
+    /* display width js */
+}
+.nav-containor{
+    width:84%;
+}
+/* nav menu respons end*/
+/* header section */
+header{
+    padding-top: .5rem;
+    margin-bottom: .5rem;
+}
+.hed-containor{
+   margin:2rem 0rem;
+ }
+.hed-right .text1{
+    font-size: 1rem;
+}
+.hed-right .text2{
+    font-size: 1.5rem;
+    font-weight: 550;
+}
+.hed-right .text3{
+    font-size: 1.3rem;
+}
+/* header section end */
+/* service section */
+.service{
+    padding-top:1rem;
+    padding-bottom:1rem;
+  }
+.card-div{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.card{
+   width:84%; 
+   margin:1rem auto;
+}
+/* service section end */
+/* about section */  
+.about{
+    padding-top:2rem;
+}
+.about-container{
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2.5rem;
+}
+.img-div2{
+  width:80%;
+  margin: 0 auto;
+}
+.about-texcontent{
+    text-align:center;
+    max-width:80%;
+    margin-top:2rem;
+    padding-bottom:.5rem;
+}
+/* about section end */
+
+/* portfolio section end */
+.portfolio-container{
+    margin-top:2rem;
+}
+.gallary a{
+    width:95%;
+    margin:1rem auto;
+}
+/* portfolio section end */
+/* corsess section */
+.corsess{
+    margin:3rem 0rem; 
+  }
+.corsess-container h1{
+    margin-bottom:1rem;
+}
+.corsess-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.corse{
+  width:90%;
+  margin:1rem 0rem;
+  background-color: var(--blackcolor);
+  border:2px solid transparent;
+}
+/* corsess section end */
+/* faq section */
+.faq-container{
+    padding:0rem;
+  }
+.faq{
+      width:100%;
+      padding:0rem;
+      margin:.0rem;
+      border-radius:.5rem;
+  }
+.faq-iqon{
+      font-size: 1.3rem;
+      margin:.5rem;
+  }
+.faq h4{
+      font-size: 1rem;
+      padding:.5rem;
+      color: var(--bg);
+  }
+.faq p{
+      padding:.2rem;
+      display: none;
+  }
+/* faq section end */
+/* footer section*/
+footer{  
+    background-color: var(--blackcolor);
+}
+.footer-container{
+    padding:1rem 0rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;  
+}
+.footer1{
+  width:45%;
+  height:200px;
+  overflow: hidden;
+}
+.footer1 h4{
+ font-size: 1rem; 
+}
+.footer1 p{
+     font-size: .7rem;
+} 
+.copyright small{
+  font-size:.7rem;
+}
+/* footer section end */
+}
