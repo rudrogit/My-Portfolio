@@ -186,6 +186,15 @@ nav #close-menu-button{
         padding: 0.4rem .8rem;
         font-size:.8rem;
      }
+
+/*  */
+.fixmasseg{
+    right:.5rem; bottom:.5rem;
+ }
+ .fixmasseg a i{
+    font-size:2rem ;
+    color: var(--tomato);
+ }
 /* nav menu respons*/
 nav{
   height:3rem;
